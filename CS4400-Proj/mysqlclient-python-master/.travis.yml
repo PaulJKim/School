@@ -1,0 +1,35 @@
+sudo: false
+language: python
+python: "3.5"
+
+cache: pip
+install:
+  - pip install tox
+
+matrix:
+  include:
+    - python: "3.6-dev"
+      env:
+        - TOX_ENV=py36
+        - TESTDB=travis.cnf
+
+
+env:
+  matrix:
+    - TOX_ENV=py26
+    - TOX_ENV=py27
+    - TOX_ENV=pypy
+    - TOX_ENV=py33
+    - TOX_ENV=py34
+    - TOX_ENV=py35
+  global:
+    - TESTDB=travis.cnf
+before_script:
+  - "mysql --help"
+  - "mysql --print-defaults"
+  - "mysql -e 'create database mysqldb_test charset utf8mb4;'"
+
+script: tox -e $TOX_ENV
+
+
+# vim: sw=2 ts=2 sts=2
