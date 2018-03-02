@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imgPoster"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:tag="unset"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="0/5"
+        android:layout_gravity="center"
+        android:id="@+id/txtRating" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtTitle"
+        android:text="Title"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(Year)"
+        android:layout_gravity="center"
+        android:id="@+id/txtYear"/>
+</LinearLayout>

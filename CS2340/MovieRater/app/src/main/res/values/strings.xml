@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MoM</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_movie_list">Search Results</string>
+
+    <string-array name="majors">
+        <item>Select a Major</item>
+    </string-array>
+    <string name="title_activity_admin_home">AdminHomeActivity</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+</resources>

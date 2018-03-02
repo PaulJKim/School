@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mom.mom.UserActivity"
+    tools:showIn="@layout/activity_user">
+
+    <!--Info layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llInfo"
+        android:layout_weight="1">
+
+        <!-- Status Text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Statuses"
+            android:id="@+id/txtStatuses" />
+
+
+        <!-- Name text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:hint="Username"
+            android:id="@+id/txtUsername"/>
+
+        <!-- Major text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Major"
+            android:id="@+id/txtMajor" />
+
+        <!-- Bio text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_weight="1"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical"
+            android:hint="Bio"
+            android:id="@+id/txtBio" />
+
+    </LinearLayout> <!--End info layout-->
+
+    <!--Button form-->
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llInfo">
+
+        <!--Unlock-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUnlock"
+            android:onClick="onUnlockClick"
+            android:text="Unlock!"/>
+
+        <!--Ban-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBan"
+            android:onClick="onBanClick"
+            android:text="Ban!"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
