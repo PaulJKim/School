@@ -1,0 +1,31 @@
+[
+  {
+    "appliance": "firealarm",
+    "location": "kitchen",
+    "problem": "low battery",
+    "timestamp": 500,
+    "priority": 1
+  },
+  {
+    "appliance": "window",
+    "location": "living room",
+    "problem": "insecure",
+    "timestamp": 500,
+    "priority": 4
+	},
+   {
+    "appliance": "lightbulb",
+    "location": "bedroom",
+    "problem": "needs replacement",
+    "timestamp": 500,
+    "priority": 2
+   },
+   {
+    "appliance": "smart tv",
+    "location": "living room",
+    "problem": "disconnected",
+    "timestamp": 500,
+    "priority": 3
+   }
+
+]
